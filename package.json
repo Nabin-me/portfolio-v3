@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "nabin dahal's personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "author": "Nabin Dahal",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabin Dahal | Portfolio</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon">
+    <!-- CDN FONTS FOR EXTERNAL FONT -->
+    <link href="https://fonts.cdnfonts.com/css/lufga" rel="stylesheet">
+    <!-- cdn css reset -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css">
+    <!-- custom css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- loading animation player -->
+    <div class="loader-container">
+        <dotlottie-player src="https://lottie.host/c2e0db48-ad45-44ea-a302-8f516abd43b8/jQXGPquEkX.json"
+            background="transparent" speed="1" style="width: 200px; height: 200px;" loop autoplay></dotlottie-player>
+    </div>
+
+    <div class="content-wrapper">
+        <!-- header -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="#home"><img src="assets/images/logo.svg" alt="logo"></a>
+                </div>
+                <div class="line-divider"></div>
+                <ul>
+                    <li><a href="#home" class="nav-links home"><i data-lucide="home" class="icons"></i>
+                            <span>Home</span></a>
+                    </li>
+                    <li><a href="#about" class="nav-links about" id=""><i data-lucide="info"
+                                class="icons"></i><span>About
+                                Me</span></a></li>
+                    <li><a href="#works" class="nav-links works" id=""><i data-lucide="briefcase"
+                                class="icons"></i><span>Works</span></a></li>
+                    <li><a href="#contact" class="nav-links contact" id=""><i data-lucide="contact"
+                                class="icons"></i><span>Contact</span></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Form Submission Dialog -->
+        <!-- It is kept outside of the main tag, in order to prevent any further input from user until the dialog is shown -->
+        <article class="dialog-container">
+            <div class="dialog-box">
+                <h1>Thank You!</h1>
+                <i data-lucide="checkmark-circle" class="icons"></i>
+                <p>Your message has been sent successfully. I will get back to you as soon as possible.</p>
+                <button class="normal-btn" id="close-btn">Close</button>
+            </div>
+        </article>
+
+        <!-- Main Content Here -->
+        <main id="main-content">
+
+            <!-- Intro Section -->
+            <section class="intro-cta page-section" id="home">
+                <img src="./assets/images/photo.jpg" alt="my photo">
+                <section>
+                    <h1>I am Nabin, a multidisciplinary designer striving to create a difference through design!</h1>
+                    <div class="btn-wrapper">
+                        <button class="normal-btn" onclick="location.href='/assets/files/resume.pdf'"><i
+                                data-lucide="file-badge" class="icons"></i>View Resume</button>
+                        <button class="highlight-btn" onclick="scrollToWorks()"><i data-lucide="eye"
+                                class="icons"></i>See
+                            my latest
+                            works</button>
+                    </div>
+                </section>
+            </section>
+
+            <!-- mouse element -->
+            <div class="mouse-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="45" viewBox="0 0 30 45" fill="none">
+                    <rect x="0.5" y="0.5" width="29" height="44" rx="14.5" stroke="#5c6371" />
+                    <path class="mouse-scrollbar" d="M15.2942 7.69739L15.2942 14.8027" stroke="white"
+                        stroke-linecap="round" />
+                </svg>
+            </div>
+
+            <!-- About Me Section -->
+            <section class="about-container page-section" id="about">
+                <h1>About Me 🤔</h1>
+                <div class="line-divider horizontal"></div>
+                <p>
+                    Greetings! 🙏 I'm Nabin Dahal, a Versatile Designer with a passion for weaving magic in the world of
+                    web development and
+                    digital media. Transforming complex problems into simple, beautiful, and intuitive designs is not
+                    just a job for me –
+                    it's a calling.<br>
+                    <br>
+                    At the heart of my work is the mission to craft websites that seamlessly marry functionality with
+                    user-friendliness, all while radiating an irresistible charm. I believe in adding a personal touch
+                    to every project,
+                    ensuring that your product not only meets its technical requirements but also stands out as a
+                    visually striking and
+                    effortlessly navigable masterpiece!
+                </p>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="skills-container page-section" id="skills">
+                <h1>Skills 🛠️</h1>
+                <div class="line-divider horizontal"></div>
+                <div class="skills-wrapper">
+
+                    <div class="skill">
+                        <i data-lucide="globe-2" class="icons large"></i>
+                        <div class="text-area">
+                            <h1>Web Development</h1>
+                            <p>
+                                Crafting Highly qualitative and beautiful web experiences
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <i data-lucide="file-image" class="icons large"></i>
+                        <div class="text-area">
+                            <h1>Graphic Design</h1>
+                            <p>
+                                Transforming raw concepts into visual wonders.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <i data-lucide="roller-coaster" class="icons large"></i>
+                        <div class="text-area">
+                            <h1>Motion Design</h1>
+                            <p>
+                                Making ideas come alive, adding energy to still graphics.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <i data-lucide="layout-grid" class="icons large"></i>
+                        <div class="text-area">
+                            <h1>User Experience</h1>
+                            <p>
+                                Designing user-focused intuitive digital interfaces.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Software Skills Section -->
+            <section class="software-skills-container page-section" id="skills">
+                <h1>Software I use ⚙️</h1>
+                <div class="line-divider horizontal"></div>
+                <div class="skills-wrapper">
+
+                    <div class="skill">
+                        <img src="./assets/images/Creative Cloud.png" alt="icon of adobe creative cloud">
+                        <div class="text-area">
+                            <h1>Adobe Creative Suite</h1>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <img src="./assets/images/Figma.png" alt="icon of figma">
+                        <div class="text-area">
+                            <h1>Figma</h1>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <img src="./assets/images/Davinci.png" alt="icon of davinci resolve">
+                        <div class="text-area">
+                            <h1>Davinci Resolve</h1>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <img src="./assets/images/Sketch.png" alt="icon of sketch">
+                        <div class="text-area">
+                            <h1>Sketch</h1>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- My Works Section -->
+            <section class="my-works-container page-section" id="works">
+                <h1>My Works 🎨</h1>
+                <div class="line-divider horizontal"></div>
+                <div class="chips-container">
+                    <div class="chip active">UI UX</div>
+                    <div class="chip">Motion Design</div>
+                    <div class="chip">Graphic Design</div>
+                </div>
+                <!-- UI/UX Cards -->
+                <div class="cards-container" id="ui-ux">
+                    <div class="card">
+                        <img src="assets/images/Portfolio.png" alt="Work 1">
+                        <div class="description">
+                            <h2>Personal Portfolio</h2>
+                            <p>My personal portfolio site project</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/Balancify App.png" alt="Work 2">
+                        <div class="description">
+                            <h2>Balancify - Finance App</h2>
+                            <p>UI Screens for finance-management app</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/Note Taking  App.png" alt="Work 3">
+                        <div class="description">
+                            <h2>Notetaking App</h2>
+                            <p>Dashboard UI for a personal notes app</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/Music App.png" alt="Work 4">
+                        <div class="description">
+                            <h2>Music App</h2>
+                            <p>Home Screen UI for a music app</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Motion Design Cards -->
+                <div class="cards-container hidden" id="motion-design">
+                    <div class="card">
+                        <img src="assets/gif/bounce.gif" alt="Bounce project">
+                        <div class="description">
+                            <h2>Bouncy Ball</h2>
+                            <p>Animation made using after effects</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/gif/circle.gif" alt="Motion Design 2">
+                        <div class="description">
+                            <h2>Circle Loading Project</h2>
+                            <p>Experiments with shape dynamics</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/gif/clock.gif" alt="Motion Design 2">
+                        <div class="description">
+                            <h2>Time is running!</h2>
+                            <p>Experiment while learning AE.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/gif/eyes.gif" alt="Motion Design 2">
+                        <div class="description">
+                            <h2>Look at Me!</h2>
+                            <p>Testing my animation capabilities</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Graphic Design Cards -->
+                <div class="cards-container hidden" id="graphic-design">
+                    <div class="card">
+                        <img src="assets/images/logo-project.png" alt="logo project">
+                        <div class="description">
+                            <h2>Branding - The Coffee Cult</h2>
+                            <p>Created logo and branding materials for coffee brand</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/esports_laptop_ad.jpg" alt="Social Media Campaign project">
+                        <div class="description">
+                            <h2>Social Media Ad</h2>
+                            <p>Design concise, audience targeted social media poster</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/icon_project.png" alt="Icon set project">
+                        <div class="description">
+                            <h2>Icon Brandbook</h2>
+                            <p>Developed a set of icons representing the nepali culture</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/social_media_ad.jpg" alt="Social Media Campaign">
+                        <div class="description">
+                            <h2>Social Media Campaign</h2>
+                            <p>Photo manipulation, social media</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more graphic design cards here -->
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact-container page-section" id="contact">
+                <h1>Contact Me 📞</h1>
+                <div class="line-divider horizontal"></div>
+                <div class="text">
+                    <p>
+                        Get in touch with me, to discuss a project, or... just to say hi!
+                    </p>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="full-name" placeholder="Full Name *" required>
+                        <i data-lucide="user-circle-2" class="icons input"></i>
+
+                    </div>
+                    <div class="form-group">
+                        <input type="email"
+                            pattern="[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+" id="email"
+                            placeholder="Email Address *" required>
+                        <i data-lucide="at-sign" class="icons input"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject *" required>
+                        <i data-lucide="mail-question" class="icons input"></i>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" cols="33" placeholder="Your Message Here *"
+                            required></textarea>
+                        <i data-lucide="message-circle" class="icons input
+                        "></i>
+                    </div>
+                    <button type="submit" id="submit-btn" class="highlight-btn">Let's Talk<i
+                            data-lucide="move-right"></i></button>
+                </form>
+            </section>
+
+        </main>
+
+        <!-- footer -->
+        <footer>
+            <div class="copyright">
+                <p>Designed & Developed by: Nabin Dahal</p>
+            </div>
+        </footer>
+
+    </div>
+    <audio id="audio">
+        <source src="assets/files/click sound.mp3" type="audio/mp3">
+    </audio>
+    <!-- Scripts -->
+    <!-- Lottie File Used for Logo Animation -->
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <!-- Lucid Icons CDN -->
+    <script src="https://unpkg.com/lucide@0.292.0/dist/umd/lucide.min.js"></script>
+    <!-- Custom JS FILE -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
